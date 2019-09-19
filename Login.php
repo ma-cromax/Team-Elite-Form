@@ -20,7 +20,7 @@
         <!--LHS-->
 
         <div class="title">
-            <h1>Join Team <span>ELITE</span></h1>
+            <h1>Join Team <span>ELITE.</span></h1>
             <div class="text">
                 <p>
                     Be part of the growing community of <br> 
@@ -29,7 +29,7 @@
                 </p>  
             </div>
             <div class="sign-up">
-                <a href="Sign Up.php"><input class="sign-up-btn" type="submit" name="sign-up" value="Sign Up"></a>
+                <a href="index.php"><input class="sign-up-btn" type="submit" name="sign-up" value="Sign Up"></a>
             </div>
             <div class="alternate">
                 <div class="icons">
@@ -53,18 +53,21 @@
         </div>
 
         <!--RHS-->
+        
             <div class="inner-wrap">
                 <div class="form-head">
                     <h2>Login</h2>
                 </div> 
                 <div class="content">
-                    <form action="" class="form-login" method="post">
-					
-                        <label for="email" class="label">Email :</label><br><br>
+                    <form action="" class="form-login">
+                        <label for="name" class="label">Name :</label><br>
+                        <input type="text" class="fill" name="name" placeholder="Type Your Name" required><br><br>
+                        <label for="email" class="label">Email :</label><br>
                         <input type="email" class="fill" name="email"  placeholder="Type Your Email" required><br><br>
                         <label for="password" class="label">Password:</label><br>
                         <input type="password" class="fill" name="password"  placeholder="Type Your Password" required><br><br>
                         <input type="submit" class="btn" name="submit" value="Login"><br>
+						          <input type="submit" class="btn" name="submit" value="Login"><br>
 				<?php
 if (isset($_POST['submit'])){
 
@@ -94,20 +97,6 @@ $num_row1 = mysqli_num_rows($user_result);
                     </form>
                     
                 </div>
-                
-                <!--
-                    <div class="alternate">
-                        <p>Or Login using</p>
-                        <div class="icons">
-                            <a href="https://www.facebook.com" target="_blank"><i class="fas fa-facebook-square fa-2x fa-fw"></i></a>
-                            <a href="https://www.twitter.com" target="_blank"><i class="fas fa-twitter-square fa-2x fa-fw"></i></a>
-                            <a href="https://www.instagram.com" target="_blank"><i class="fas fa-instagram fa-2x fa-fw"></i></a>
-                        </div>
-                    </div>
-                    <div class="sign-up">
-                        <p><a href="#">Sign Up</a></p>
-                    </div>
-                -->
             </div>
     </div>
             <div class="footer">
